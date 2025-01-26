@@ -11,10 +11,11 @@ document.querySelector(
   ".js-score"
 ).innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 
-// let computerMove='';  its a global variable not preferable to use
+// a global variable not preferable to use
 
 function pickComputerMove() {
   const randomNumber = Math.random();
+  let computerMove = "";
 
   if (randomNumber >= 0 && randomNumber < 1 / 3) {
     computerMove = "Rock";
